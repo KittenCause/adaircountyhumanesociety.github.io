@@ -1,0 +1,25 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{% if page.title%}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/apple-touch-icon.png" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/img/favicon-32x32.png" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/img/favicon-16x16.png" | prepend: site.baseurl }}">
+    <link rel="manifest" href="{{ "/img/manifest.json" | prepend: site.baseurl }}">
+    <link rel="mask-icon" href="{{ "/img/safari-pinned-tab.svg" | prepend: site.baseurl }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}">
+    <meta name="msapplication-config" content="{{ "/img/browserconfig.xml" | prepend: site.baseurl }}">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "/css/achs.css" | prepend: site.baseurl }}">
+</head>

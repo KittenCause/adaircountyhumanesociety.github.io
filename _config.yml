@@ -1,0 +1,12 @@
+title: Adair County Humane Society
+description: "Adair County Humane Society"
+baseurl: "/achs"
+url: "http://butzow.me"
+
+markdown: kramdown
+
+plugins:
+    - jekyll-bootstrap-sass
+
+sass:
+    style: compressed
