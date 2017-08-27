@@ -1,13 +1,9 @@
 title: Adair County Humane Society
 description: "Adair County Humane Society"
-baseurl: "/"
+baseurl: ""
 url: "http://adaircountyhumanesociety.github.io"
 
 markdown: kramdown
 
-plugins:
-    - jekyll-bootstrap-sass
-
 sass:
-    sass_dir: ./_sass
     style: compressed
