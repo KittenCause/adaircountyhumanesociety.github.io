@@ -1,7 +1,7 @@
 title: Adair County Humane Society
 description: "Adair County Humane Society"
-baseurl: "/achs"
-url: "http://butzow.me"
+baseurl: "/"
+url: "http://adaircountyhumanesociety.github.io"
 
 markdown: kramdown
 
