@@ -3,5 +3,4 @@
 ## TODO
 
 * SEO
-* Google Analytics
 * Pet preview slideshow
