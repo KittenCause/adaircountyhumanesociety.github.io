@@ -13,6 +13,8 @@ function getPets() {
             
             if (status == 100) {
                 // Good to go
+                data.petfinder.pets.pet.sort(randomOrder);
+                
                 data.petfinder.pets.pet.forEach(function(it) {
                     var id = it.id.$t;
                     var name = it.name.$t;
@@ -56,4 +58,8 @@ function createPetListing(id, name, image) {
     $div.append($hoverDiv);
         
     $("#pets").append($div);
+}
+
+function randomOrder() {
+    return (Math.round(Math.random()) - 0.5);
 }
