@@ -8,5 +8,15 @@ $(document).ready(function() {
         lazyLoad: "ondemand"
     });
     
+    $("#calendarToggle").click(function() {
+        $("#calendar").toggle(500, function() {
+            if ($(this).is(":visible")) {
+                $("#calendarToggle").text("Hide calendar");
+            } else {
+                $("#calendarToggle").text("View calendar");
+            }
+        });
+    });
+    
     getPets();
 });
