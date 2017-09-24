@@ -8,7 +8,7 @@
     
     <meta property="og:url" content="{{ page.url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+    <meta property="og:title" content="{{ site.title | escape }}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     
     <link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/apple-touch-icon.png" | prepend: site.baseurl }}">

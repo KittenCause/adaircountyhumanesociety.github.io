@@ -76,6 +76,19 @@ layout: default
                             <p class="list-group-item-text">Check out our Amazon wishlist for items that make wonderful donations</p>
                         </a -->
                     </div>
+                    
+                    <h3>Recent Blog Posts</h3>
+                    <div class="list-group">
+                        {% for post in site.posts limit:3 %}
+                        <a href="{{ post.url }}" class="list-group-item">
+                            <h4 class="list-group-item-header">{{ post.title }}</h4>
+                            <p class="list-group-item-text">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}</p>
+                        </a>
+                        {% endfor %}
+                        <a href="/posts.html" class="list-group-item">
+                            <h4 class="list-group-item-header">All Blog Posts</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +96,7 @@ layout: default
     
     <div class="row">
         <h1>Pets</h1>
-        <p>Below are the animals we currently have for adoption. If you have any questions about an animal, give us a call at <a href="tel:1-660-665-8038">&#40;660&#41; 665-8038</a>.</p>
+        <p>Below are some of the animals we currently have for adoption. If you have any questions about an animal, give us a call at <a href="tel:1-660-665-8038">&#40;660&#41; 665-8038</a>.</p>
         <div class="text-center" id="pets"></div>
     </div>
 </div>

@@ -3,7 +3,6 @@ var API_URL = "http://api.petfinder.com/";
 
 function getPets() {
     var url = API_URL + "shelter.getPets?format=json&id=MO60&key=" + API_KEY + "&callback=?";
-    console.log(url)
     $.getJSON({
         type: "GET",
         url: url,
