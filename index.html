@@ -80,7 +80,7 @@ layout: default
                     <h3>Recent Blog Posts</h3>
                     <div class="list-group">
                         {% for post in site.posts limit:3 %}
-                        <a href="{{ post.url }}" class="list-group-item">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item">
                             <h4 class="list-group-item-header">{{ post.title }}</h4>
                             <p class="list-group-item-text">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }}</p>
                         </a>

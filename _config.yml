@@ -1,6 +1,6 @@
 title: Adair County Humane Society
 description: "Adair County Humane Society"
-baseurl: ""
+baseurl: "/preview"
 url: "http://adairhumanesociety.org"
 
 markdown: kramdown
