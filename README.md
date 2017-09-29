@@ -3,4 +3,3 @@
 ## TODO
 
 * SEO
-* Pet preview slideshow
